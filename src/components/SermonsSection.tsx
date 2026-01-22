@@ -7,15 +7,15 @@ export default function SermonsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-white text-4xl md:text-5xl font-medium mb-6">
-            Join the
+            Únete a la
             <br />
-            conversation.
+            Conversación
           </h2>
 
           <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto">
-            Click here to hear the latest sermon, lecture, or event from our
-            church services. Follow along by taking your own notes and join the
-            dialogue that we&apos;re having about Jesus.
+            Haz clic aquí para escuchar la última predicación, enseñanza o
+            evento de nuestros servicios. Sigue tomando tus propias notas y
+            únete al diálogo que estamos teniendo sobre Jesús.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function SermonsSection() {
           <div className="relative w-full md:w-[400px] h-64 flex-shrink-0">
             <img
               src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?q=80&w=2070&auto=format&fit=crop"
-              alt="Sermon thumbnail"
+              alt="Miniatura de predicación"
               className="w-full h-full object-cover"
             />
             {/* Play Button */}
@@ -45,19 +45,19 @@ export default function SermonsSection() {
           {/* Sermon Info */}
           <div className="flex-1">
             <h3 className="text-white text-2xl md:text-3xl font-medium mb-3">
-              Hurt By
+              Herido por la
               <br />
-              Community
+              Comunidad
             </h3>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Have you been hurt by community? How do you respond when
-              you&apos;re wounded by the people closest to you? How can you
-              beg...
+              ¿Has sido herido por la comunidad? ¿Cómo respondes cuando eres
+              lastimado por las personas más cercanas a ti? ¿Cómo puedes
+              comenzar...
             </p>
 
             <p className="text-gray-500 text-sm mb-6">
-              <span className="underline">Justin Driedger</span> &middot;
+              <span className="underline">Pastor Principal</span> &middot;
               6/4/2023
             </p>
 
@@ -65,7 +65,7 @@ export default function SermonsSection() {
               href="#sermons"
               className="inline-block bg-white text-black py-4 px-8 font-medium hover:bg-gray-200 transition-colors"
             >
-              View Media
+              Ver Predicación
             </Link>
           </div>
         </div>

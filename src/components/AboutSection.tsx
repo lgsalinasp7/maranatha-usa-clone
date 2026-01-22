@@ -5,30 +5,29 @@ export default function AboutSection() {
     <section id="about" className="bg-[#0a0a0a] py-24 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-white text-4xl md:text-5xl font-medium mb-8">
-          Live a Life Abundant in Jesus
+          Mas que una Iglesia somos una Familia
         </h2>
 
         <p className="text-gray-400 text-base leading-relaxed mb-6">
-          At Life Abundant Church, we believe that true growth in faith comes
-          from worshipping and learning together. Our church is dedicated to
-          creating a space that encourages spiritual growth and connection.
+        En la Iglesia Maranatha MC, creemos que el verdadero crecimiento
+        en la fe ocurre cuando adoramos a Dios y caminamos juntos en Su Palabra.
         </p>
 
         <p className="text-gray-400 text-base leading-relaxed mb-6">
-          We offer opportunities to engage with scripture, to learn about Jesus
-          and to worship Him with others. Our church is open to people of all
-          ages and backgrounds.
+        Somos una iglesia comprometida con crear un ambiente donde el Espíritu Santo
+        transforma vidas, fortalece la comunión y despierta el propósito de Dios en cada persona.
         </p>
 
         <p className="text-gray-400 text-base leading-relaxed mb-10">
-          Join us in growing in faith with people who love and obey Jesus.
+        Aquí encontrarás oportunidades para conocer las Escrituras, crecer como discípulo de Jesús y adorarle en comunidad.
+        Nuestra iglesia está abierta para personas de todas las edades y trasfondos, unidas por un mismo amor: Jesús.
         </p>
 
         <Link
           href="#about"
           className="inline-block bg-[#1a1a1a] text-white py-4 px-10 font-medium hover:bg-[#2a2a2a] transition-colors"
         >
-          About Us
+          Acerca de Nosotros
         </Link>
       </div>
     </section>
