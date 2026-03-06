@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function StaffCalendarSection() {
   return (
-    <section className="bg-black">
+    <section className="bg-[#0a0a0a]">
       {/* Images Row */}
       <div className="grid grid-cols-2">
         <div className="relative h-64 md:h-80">
@@ -24,31 +24,31 @@ export default function StaffCalendarSection() {
       {/* Content Row */}
       <div className="grid md:grid-cols-2">
         {/* Staff & Leaders */}
-        <div id="staff" className="px-8 lg:px-16 py-16">
-          <p className="text-gray-400 text-sm tracking-widest uppercase mb-3">
+        <div id="staff" className="px-8 lg:px-16 py-12">
+          <p className="text-neutral-500 text-sm tracking-widest uppercase mb-3">
             CONOCE NUESTRA COVERTURA
           </p>
 
-          <h2 className="text-white text-3xl md:text-4xl font-medium mb-6">
+          <h2 className="text-neutral-900 text-3xl md:text-4xl font-medium mb-6">
             NUESTROS PASTORES
           </h2>
 
-          <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-sm">
+          <p className="text-neutral-600 text-base leading-relaxed mb-8 max-w-sm">
             Somos una iglesia internacional formada por Apostoles y pastores regionales,
             que nos unen en el amor de Cristo y la misión de llevar el evangelio a todo el mundo.
           </p>
 
           <Link
             href="#staff"
-            className="inline-block bg-white text-black py-4 px-8 font-medium hover:bg-gray-200 transition-colors"
+            className="btn-pill inline-block bg-white text-black py-4 px-8 hover:bg-neutral-100"
           >
             Nuestro Personal y Líderes
           </Link>
         </div>
 
         {/* Calendar */}
-        <div id="calendar" className="px-8 lg:px-16 py-16">
-          <p className="text-gray-400 text-sm tracking-widest uppercase mb-3">
+        <div id="calendar" className="px-8 lg:px-16 py-12">
+          <p className="text-neutral-400 text-sm tracking-widest uppercase mb-3">
             NUESTRO CALENDARIO
           </p>
 
@@ -58,7 +58,7 @@ export default function StaffCalendarSection() {
             está Sucediendo
           </h2>
 
-          <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-sm">
+          <p className="text-neutral-400 text-base leading-relaxed mb-8 max-w-sm">
             Revisa los eventos de este mes para descubrir qué está pasando y
             cómo puedes involucrarte. Explora la lista completa de ministerios
             y servicios próximos.
@@ -66,7 +66,7 @@ export default function StaffCalendarSection() {
 
           <Link
             href="#calendar"
-            className="inline-block bg-white text-black py-4 px-8 font-medium hover:bg-gray-200 transition-colors"
+            className="btn-pill inline-block bg-white text-black py-4 px-8 hover:bg-neutral-100"
           >
             Nuestro Calendario
           </Link>

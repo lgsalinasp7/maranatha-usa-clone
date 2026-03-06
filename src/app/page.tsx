@@ -1,10 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import PlanVisitSection from "@/components/PlanVisitSection";
-import StaffCalendarSection from "@/components/StaffCalendarSection";
-import NextStepsSection from "@/components/NextStepsSection";
-import SermonsSection from "@/components/SermonsSection";
+import InstagramSection from "@/components/InstagramSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,10 +10,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
-      <PlanVisitSection />
-      <StaffCalendarSection />
-      <NextStepsSection />
-      <SermonsSection />
+      <InstagramSection />
       <Footer />
     </main>
   );

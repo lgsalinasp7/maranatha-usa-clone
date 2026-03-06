@@ -48,10 +48,10 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 container mx-auto px-6 py-12 md:py-16 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">
-            Una iglesia
+          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight">
+            Somos una iglesia
             <br />
             de Fe Amor
             <br />
@@ -59,27 +59,27 @@ export default function HeroSection() {
           </h1>
         </div>
 
-        <div className="lg:max-w-md">
-          <h2 className="text-white text-xl font-semibold mb-4">
-            Únete esta Semana
-          </h2>
-          <p className="text-white/80 text-base mb-8 leading-relaxed">
-          Un lugar donde Dios transforma vidas y
-          forma discípulos que aman a Jesús y caminan en Su verdad..
+        <div className="lg:max-w-md text-center sm:text-left flex flex-col items-center sm:items-start">
+          <p className="text-white/60 text-xs uppercase tracking-[0.2em] mb-3">
+            Únete esta semana
+          </p>
+          <p className="text-white/90 text-lg mb-8 leading-relaxed">
+            Un lugar donde Dios transforma vidas y forma discípulos que aman a
+            Jesús y caminan en Su verdad.
           </p>
 
-          <div className="flex flex-col gap-4 max-w-xs">
+          <div className="flex flex-col sm:flex-row gap-3 max-w-xs sm:max-w-none items-center sm:items-start">
             <Link
               href="#visit"
-              className="bg-white text-black py-4 px-8 text-center font-medium hover:bg-white/90 transition-colors"
+              className="btn-pill bg-white text-black py-4 px-8 text-center hover:bg-white/95"
             >
-              Visitanos
+              Conocenos
             </Link>
             <Link
               href="#next-steps"
-              className="border border-white text-white py-4 px-8 text-center font-medium hover:bg-white hover:text-black transition-colors"
+              className="btn-pill border-2 border-white text-white py-4 px-8 text-center hover:bg-white hover:text-black"
             >
-              Involúcrate
+              PoimenSoft
             </Link>
           </div>
         </div>

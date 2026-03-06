@@ -32,6 +32,7 @@
     --input: 0 0% 90%;
     --ring: 0 0% 2%;
     --radius: 0rem;
+    --btn-radius: 9999px;
   }
 
   .dark {
@@ -69,4 +70,17 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  /* Botones modernos: pill shape, transiciones suaves */
+  .btn-pill {
+    @apply rounded-full font-medium transition-all duration-200 ease-out;
+  }
+  .btn-pill:hover {
+    @apply opacity-90;
+  }
+  .btn-pill:active {
+    @apply scale-[0.98];
+  }
 }

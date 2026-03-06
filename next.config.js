@@ -8,6 +8,9 @@ const nextConfig = {
       "images.unsplash.com",
       "ext.same-assets.com",
       "ugc.same-assets.com",
+      "cdninstagram.com",
+      "scontent.cdninstagram.com",
+      "fbcdn.net",
     ],
     remotePatterns: [
       {
@@ -28,6 +31,21 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "ugc.same-assets.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdninstagram.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "scontent.cdninstagram.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "fbcdn.net",
         pathname: "/**",
       },
     ],
