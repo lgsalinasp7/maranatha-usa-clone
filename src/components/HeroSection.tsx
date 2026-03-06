@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 export default function HeroSection() {
@@ -20,11 +21,14 @@ export default function HeroSection() {
       {/* Background Video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Imagen de respaldo por si el video no carga */}
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop"
           alt="Reunión de la iglesia"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          sizes="100vw"
+          className="object-cover"
           style={{ zIndex: 0 }}
+          priority
         />
         <video
           ref={videoRef}
@@ -36,7 +40,7 @@ export default function HeroSection() {
           style={{ zIndex: 1 }}
           onError={(e) => {
             console.error("Error al cargar el video:", e);
-            
+
             if (videoRef.current) {
               videoRef.current.style.display = "none";
             }

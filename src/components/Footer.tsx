@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-20 h-20 flex items-center justify-center">
                 <Image
                   src="/images/logoMaranatha.png"
-                  alt="Maranatha Logo"
+                  alt="Logo de Iglesia Maranatha"
                   width={80}
                   height={80}
                   className="object-contain"
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-400 text-sm mb-4">
-              Nos reunimos los domingos a las 11:00 a.m.
+              Nos reunimos los domingos a las 10:00 a.m.
             </p>
 
             <p className="text-gray-400 text-sm mb-8">
@@ -32,7 +32,7 @@ export default function Footer() {
 
             <div className="flex flex-col sm:flex-row gap-3 items-start">
               <Link
-                href="#"
+                href="https://wa.me/573046532363"
                 className="btn-pill w-fit bg-white text-black py-3 px-6 text-center text-sm hover:bg-gray-100"
               >
                 Saluda
@@ -117,13 +117,13 @@ export default function Footer() {
                 Próximos Pasos
               </Link>
               <Link
-                href="#"
+                href="#about"
                 className="block text-white hover:text-gray-300 transition-colors"
               >
                 Oración
               </Link>
               <Link
-                href="#"
+                href="mailto:contacto@maranathamc.com"
                 className="block text-white hover:text-gray-300 transition-colors"
               >
                 Ofrendar
@@ -134,7 +134,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-4">Redes Sociales</h4>
               <nav className="flex gap-4">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/Maranathamonteriacentral?locale=es_LA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
@@ -145,7 +145,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/maranathamc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
@@ -166,12 +166,9 @@ export default function Footer() {
             Copyright 2026 Iglesia Maranatha
           </p>
           <p className="text-gray-500 text-sm">Todos los Derechos Reservados.</p>
-          <a
-            href="#"
-            className="text-gray-500 text-sm underline hover:no-underline mt-4 inline-block"
-          >
+          <span className="text-gray-500 text-sm mt-4 inline-block">
             Desarrollado por KaledSoft
-          </a>
+          </span>
         </div>
       </div>
     </footer>

@@ -3,9 +3,50 @@ import "./globals.css";
 import { ClientBody } from "./ClientBody";
 
 export const metadata: Metadata = {
-  title: "Come Grow In Your Faith With Life Abundant Church in Los Angeles",
+  metadataBase: new URL("https://www.maranathamc.com"),
+  title: "Iglesia Maranatha | Iglesia Cristiana en Montería, Córdoba",
   description:
-    "Join a real community of believers who love & obey Jesus here at Life Abundant. Experience authentic worship with us, and grow in your faith.",
+    "Iglesia Maranatha en Montería, Córdoba. Somos una iglesia cristiana de fe, amor y poder. Únete a nuestros servicios los domingos a las 10:00 a.m.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Iglesia Maranatha | Iglesia Cristiana en Montería, Córdoba",
+    description:
+      "Somos una iglesia cristiana de fe, amor y poder en Montería, Córdoba. Únete a nuestros servicios los domingos a las 10:00 a.m.",
+    url: "https://www.maranathamc.com",
+    siteName: "Iglesia Maranatha",
+    images: [
+      {
+        url: "/images/logoMaranatha.png",
+        width: 800,
+        height: 800,
+        alt: "Logo de Iglesia Maranatha",
+      },
+    ],
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iglesia Maranatha | Iglesia Cristiana en Montería, Córdoba",
+    description:
+      "Somos una iglesia cristiana de fe, amor y poder en Montería, Córdoba. Únete a nuestros servicios los domingos a las 10:00 a.m.",
+    images: ["/images/logoMaranatha.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
+  icons: {
+    icon: "/images/logoMaranatha.png",
+    apple: "/images/logoMaranatha.png",
+  },
 };
 
 export default function RootLayout({
@@ -14,7 +55,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://w.behold.so" />
+      </head>
       <body className="antialiased" suppressHydrationWarning>
         <ClientBody>{children}</ClientBody>
       </body>

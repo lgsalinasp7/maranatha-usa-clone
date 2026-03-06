@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function StaffCalendarSection() {
   return (
@@ -6,17 +7,21 @@ export default function StaffCalendarSection() {
       {/* Images Row */}
       <div className="grid grid-cols-2">
         <div className="relative h-64 md:h-80">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070&auto=format&fit=crop"
             alt="Reunión de la comunidad"
-            className="w-full h-full object-cover"
+            fill
+            sizes="50vw"
+            className="object-cover"
           />
         </div>
         <div className="relative h-64 md:h-80">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2073&auto=format&fit=crop"
             alt="Adoración"
-            className="w-full h-full object-cover"
+            fill
+            sizes="50vw"
+            className="object-cover"
           />
         </div>
       </div>

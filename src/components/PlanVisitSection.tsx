@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PlanVisitSection() {
   return (
@@ -6,10 +7,12 @@ export default function PlanVisitSection() {
       <div className="grid lg:grid-cols-2">
         {/* Image Side */}
         <div className="relative h-80 lg:h-auto lg:min-h-[500px] overflow-hidden lg:rounded-r-2xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop"
             alt="Comunidad de la iglesia"
-            className="w-full h-full object-cover absolute inset-0"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover"
           />
         </div>
 

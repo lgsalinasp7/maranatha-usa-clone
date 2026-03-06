@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NextStepsSection() {
   return (
@@ -29,10 +30,12 @@ export default function NextStepsSection() {
 
         {/* Image Side */}
         <div className="relative h-80 lg:h-auto lg:min-h-[500px] order-1 lg:order-2 overflow-hidden lg:rounded-l-2xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
             alt="Miembro de la iglesia"
-            className="w-full h-full object-cover absolute inset-0"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover"
           />
         </div>
       </div>
