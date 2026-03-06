@@ -46,7 +46,7 @@ export default function HeroSection() {
             }
           }}
         >
-          <source src="/video/backgraundHero.mp4" type="video/mp4" />
+          <source src="/video/backgraundHero1.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" style={{ zIndex: 2 }} />
       </div>
