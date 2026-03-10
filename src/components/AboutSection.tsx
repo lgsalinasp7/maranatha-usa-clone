@@ -54,13 +54,13 @@ export default function AboutSection() {
           <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-0 flex flex-col items-center justify-end min-h-[300px] sm:min-h-[350px] relative overflow-hidden group">
             <div className="absolute inset-0 w-full h-full">
               <Image
-                src="/images/monteria.png"
+                src="/images/Monteria-parnoamica-rio-sinu.jpeg"
                 alt="Montería Río Sinú"
                 fill
                 className="object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700"
                 sizes="(max-width: 1024px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+              <div className="absolute right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
             <div className="relative z-10 flex flex-col items-center p-6 sm:p-8 mt-auto w-full">
               <span className="text-2xl sm:text-3xl font-bold text-white mb-1 tracking-wide drop-shadow-lg text-center">Montería</span>
