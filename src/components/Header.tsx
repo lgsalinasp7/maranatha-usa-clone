@@ -31,7 +31,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 backdrop-blur-md bg-black/20">
+    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 backdrop-blur-md bg-brand-dark/80">
       <Link href="/" className="relative z-50">
         <div className="w-20 h-20 flex items-center justify-center">
           <Image
@@ -48,17 +48,17 @@ export default function Header() {
       <button
         type="button"
         onClick={() => setMenuOpen(!menuOpen)}
-        className="flex items-center gap-2 text-white text-sm tracking-wide relative z-50"
+        className="flex items-center gap-2 text-brand-light text-sm tracking-wide relative z-50"
       >
         <span>Menú</span>
         <div
-          className={`w-10 h-5 rounded-full border border-white/50 flex items-center px-0.5 transition-all ${
-            menuOpen ? "bg-white" : "bg-transparent"
+          className={`w-10 h-5 rounded-full border border-brand-light/50 flex items-center px-0.5 transition-all ${
+            menuOpen ? "bg-brand-light" : "bg-transparent"
           }`}
         >
           <div
             className={`w-4 h-4 rounded-full transition-all ${
-              menuOpen ? "bg-black translate-x-4" : "bg-white translate-x-0"
+              menuOpen ? "bg-brand-dark translate-x-4" : "bg-brand-light translate-x-0"
             }`}
           />
         </div>
@@ -73,7 +73,7 @@ export default function Header() {
       >
         {/* Backdrop: mitad izquierda, cierra al clic */}
         <div
-          className="flex-1 bg-black/50"
+          className="flex-1 bg-brand-dark/50"
           onClick={() => setMenuOpen(false)}
           onKeyDown={(e) => e.key === "Enter" && setMenuOpen(false)}
           role="button"
@@ -82,7 +82,7 @@ export default function Header() {
         />
         {/* Panel del menú: mitad derecha, desliza desde la derecha */}
         <div
-          className={`w-full md:w-1/2 h-screen bg-black shadow-2xl rounded-bl-3xl flex flex-col transition-transform duration-300 ${
+          className={`w-full md:w-1/2 h-screen bg-brand-dark shadow-2xl rounded-bl-3xl flex flex-col transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -90,7 +90,7 @@ export default function Header() {
             <Link
               href="/"
               onClick={() => setMenuOpen(false)}
-              className="text-white text-2xl hover:opacity-70 transition-opacity"
+              className="text-brand-light text-2xl hover:opacity-70 transition-opacity"
             >
               Inicio
             </Link>
@@ -100,7 +100,7 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => setNosotrosOpen(!nosotrosOpen)}
-                className="text-white text-2xl hover:opacity-70 transition-opacity flex items-center gap-2"
+                className="text-brand-light text-2xl hover:opacity-70 transition-opacity flex items-center gap-2"
               >
                 Nosotros
                 <svg
@@ -117,28 +117,28 @@ export default function Header() {
                   <Link
                     href="#about"
                     onClick={() => { setMenuOpen(false); setNosotrosOpen(false); }}
-                    className="text-white/90 text-lg hover:opacity-70 transition-opacity"
+                    className="text-brand-light/90 text-lg hover:opacity-70 transition-opacity"
                   >
                     Quienes somos?
                   </Link>
                   <Link
                     href="#staff"
                     onClick={() => { setMenuOpen(false); setNosotrosOpen(false); }}
-                    className="text-white/90 text-lg hover:opacity-70 transition-opacity"
+                    className="text-brand-light/90 text-lg hover:opacity-70 transition-opacity"
                   >
                     Nuestros Pastores
                   </Link>
                   <Link
                     href="#vision-gade"
                     onClick={() => { setMenuOpen(false); setNosotrosOpen(false); }}
-                    className="text-white/90 text-lg hover:opacity-70 transition-opacity"
+                    className="text-brand-light/90 text-lg hover:opacity-70 transition-opacity"
                   >
                     Vision GADE
                   </Link>
                   <Link
                     href="#ruta-del-creyente"
                     onClick={() => { setMenuOpen(false); setNosotrosOpen(false); }}
-                    className="text-white/90 text-lg hover:opacity-70 transition-opacity"
+                    className="text-brand-light/90 text-lg hover:opacity-70 transition-opacity"
                   >
                     Ruta del Creyente
                   </Link>
@@ -149,21 +149,21 @@ export default function Header() {
             <Link
               href="#staff"
               onClick={() => setMenuOpen(false)}
-              className="text-white text-2xl hover:opacity-70 transition-opacity"
+              className="text-brand-light text-2xl hover:opacity-70 transition-opacity"
             >
               Cobertura
             </Link>
             <Link
               href="#next-steps"
               onClick={() => setMenuOpen(false)}
-              className="text-white text-2xl hover:opacity-70 transition-opacity"
+              className="text-brand-light text-2xl hover:opacity-70 transition-opacity"
             >
               Reflexiones
             </Link>
             <Link
               href="#next-steps"
               onClick={() => setMenuOpen(false)}
-              className="text-white text-2xl hover:opacity-70 transition-opacity"
+              className="text-brand-light text-2xl hover:opacity-70 transition-opacity"
             >
               PoimenSoft
             </Link>

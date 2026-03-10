@@ -3,8 +3,21 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
-      <div className="container mx-auto px-6 py-12">
+    <footer className="relative text-white overflow-hidden">
+      {/* Fondo con imagen texturizada */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/fondo.png"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-brand-dark/85" aria-hidden />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Contact */}
           <div className="lg:col-span-1">
@@ -21,11 +34,11 @@ export default function Footer() {
               </div>
             </div>
 
-            <p className="text-gray-400 text-sm mb-4">
+            <p className="text-brand-light/90 text-sm mb-4">
               Nos reunimos los domingos a las 10:00 a.m.
             </p>
 
-            <p className="text-gray-400 text-sm mb-8">
+            <p className="text-brand-light/80 text-sm mb-8">
               No importa la situación, siempre puedes sentirte libre de
               contactarnos, incluso si solo es para saludar.
             </p>
@@ -33,13 +46,13 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row gap-3 items-start">
               <Link
                 href="https://wa.me/573046532363"
-                className="btn-pill w-fit bg-white text-black py-3 px-6 text-center text-sm hover:bg-gray-100"
+                className="btn-pill w-fit bg-brand-light text-brand-dark py-3 px-6 text-center text-sm hover:bg-white"
               >
                 Saluda
               </Link>
               <Link
                 href="#next-steps"
-                className="btn-pill w-fit border-2 border-white text-white py-3 px-6 text-center text-sm hover:bg-white hover:text-black"
+                className="btn-pill w-fit border-2 border-brand-mid text-brand-light py-3 px-6 text-center text-sm hover:bg-brand-mid hover:text-brand-light"
               >
                 Da tu Próximo Paso
               </Link>
@@ -51,19 +64,19 @@ export default function Footer() {
             <div className="space-y-4">
               <a
                 href="mailto:contacto@maranathamc.com"
-                className="block text-white underline hover:no-underline"
+                className="block text-brand-light hover:text-white transition-colors underline hover:no-underline"
               >
                 contacto@maranathamc.com
               </a>
 
               <a
                 href="tel:+573046532363"
-                className="block text-white underline hover:no-underline"
+                className="block text-brand-light hover:text-white transition-colors underline hover:no-underline"
               >
                 +57 3046532363
               </a>
 
-              <address className="not-italic text-white">
+              <address className="not-italic text-brand-light/90">
                 Centro, calle 30 # 10-109
                 <br />
                 Montería - Córdoba
@@ -76,19 +89,19 @@ export default function Footer() {
             <nav className="space-y-4">
               <Link
                 href="#visit"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Visitanos
               </Link>
               <Link
                 href="#next-steps"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Predicaciones
               </Link>
               <Link
                 href="#calendar"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Calendario
               </Link>
@@ -100,44 +113,44 @@ export default function Footer() {
             <nav className="space-y-4 mb-8">
               <Link
                 href="#about"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Acerca de Nosotros
               </Link>
               <Link
                 href="#staff"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Personal y Líderes
               </Link>
               <Link
                 href="#next-steps"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Próximos Pasos
               </Link>
               <Link
                 href="#about"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Oración
               </Link>
               <Link
                 href="mailto:contacto@maranathamc.com"
-                className="block text-white hover:text-gray-300 transition-colors"
+                className="block text-brand-light hover:text-white transition-colors"
               >
                 Ofrendar
               </Link>
             </nav>
 
             <div>
-              <h4 className="text-white font-semibold mb-4">Redes Sociales</h4>
+              <h4 className="text-brand-light font-semibold mb-4">Redes Sociales</h4>
               <nav className="flex gap-4">
                 <a
                   href="https://www.facebook.com/Maranathamonteriacentral?locale=es_LA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-white/70 transition-colors"
+                  className="text-brand-light hover:text-white transition-colors"
                   aria-label="Facebook"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -148,7 +161,7 @@ export default function Footer() {
                   href="https://www.instagram.com/maranathamc/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-white/70 transition-colors"
+                  className="text-brand-light hover:text-white transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -161,12 +174,12 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-6 border-t border-gray-800">
-          <p className="text-gray-500 text-sm">
+        <div className="mt-12 pt-6 border-t border-brand-purple">
+          <p className="text-brand-light/70 text-sm">
             Copyright 2026 Iglesia Maranatha
           </p>
-          <p className="text-gray-500 text-sm">Todos los Derechos Reservados.</p>
-          <span className="text-gray-500 text-sm mt-4 inline-block">
+          <p className="text-brand-light/70 text-sm">Todos los Derechos Reservados.</p>
+          <span className="text-brand-light/60 text-sm mt-4 inline-block">
             Desarrollado por KaledSoft
           </span>
         </div>

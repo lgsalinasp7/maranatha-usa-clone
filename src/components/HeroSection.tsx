@@ -48,13 +48,13 @@ export default function HeroSection() {
         >
           <source src="/video/backgraundHero1.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/50" style={{ zIndex: 2 }} />
+        <div className="absolute inset-0 bg-brand-dark/50" style={{ zIndex: 2 }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-12 md:py-16 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight">
+          <h1 className="text-brand-light text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight">
             Somos una iglesia
             <br />
             de Fe Amor
@@ -64,10 +64,10 @@ export default function HeroSection() {
         </div>
 
         <div className="lg:max-w-md text-center sm:text-left flex flex-col items-center sm:items-start">
-          <p className="text-white/60 text-xs uppercase tracking-[0.2em] mb-3">
+          <p className="text-brand-light/70 text-xs uppercase tracking-[0.2em] mb-3">
             Únete esta semana
           </p>
-          <p className="text-white/90 text-lg mb-8 leading-relaxed">
+          <p className="text-brand-light/90 text-lg mb-8 leading-relaxed">
             Un lugar donde Dios transforma vidas y forma discípulos que aman a
             Jesús y caminan en Su verdad.
           </p>
@@ -75,13 +75,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-3 max-w-xs sm:max-w-none items-center sm:items-start">
             <Link
               href="#visit"
-              className="btn-pill bg-white text-black py-4 px-8 text-center hover:bg-white/95"
+              className="btn-pill bg-brand-light text-brand-dark py-4 px-8 text-center hover:bg-white"
             >
               Conocenos
             </Link>
             <Link
               href="#next-steps"
-              className="btn-pill border-2 border-white text-white py-4 px-8 text-center hover:bg-white hover:text-black"
+              className="btn-pill border-2 border-brand-mid text-brand-light py-4 px-8 text-center hover:bg-brand-mid hover:text-brand-light"
             >
               PoimenSoft
             </Link>
