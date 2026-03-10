@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["var(--font-playfair)", "serif"],
+      },
       colors: {
         /* Paleta Iglesia Maranatha */
         brand: {

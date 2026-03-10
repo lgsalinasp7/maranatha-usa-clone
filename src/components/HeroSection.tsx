@@ -46,7 +46,7 @@ export default function HeroSection() {
             }
           }}
         >
-          <source src="/video/backgraundHero1.mp4" type="video/mp4" />
+          <source src="/video/bacw1.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-brand-dark/50" style={{ zIndex: 2 }} />
       </div>
@@ -64,10 +64,10 @@ export default function HeroSection() {
         </div>
 
         <div className="lg:max-w-md text-center sm:text-left flex flex-col items-center sm:items-start">
-          <p className="text-brand-light/70 text-xs uppercase tracking-[0.2em] mb-3">
+          <p className="font-playfair text-brand-light/70 text-xs uppercase tracking-[0.2em] mb-3">
             Únete esta semana
           </p>
-          <p className="text-brand-light/90 text-lg mb-8 leading-relaxed">
+          <p className="font-playfair text-brand-light/90 text-lg mb-8 leading-relaxed">
             Un lugar donde Dios transforma vidas y forma discípulos que aman a
             Jesús y caminan en Su verdad.
           </p>

@@ -112,13 +112,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <nav className="space-y-4 mb-8">
               <Link
-                href="#about"
+                href="/nosotros"
                 className="block text-brand-light hover:text-white transition-colors"
               >
                 Acerca de Nosotros
               </Link>
               <Link
-                href="#staff"
+                href="/nosotros#pastores"
                 className="block text-brand-light hover:text-white transition-colors"
               >
                 Personal y Líderes
