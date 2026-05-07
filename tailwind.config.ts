@@ -9,7 +9,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["var(--font-playfair)", "serif"],
+      },
       colors: {
+        /* Paleta Iglesia Maranatha */
+        brand: {
+          dark: '#111827',      /* Azul oscuro fondo texturizado */
+          light: '#D1D5DB',     /* Luz difusa / texto destacado */
+          mid: '#2A4B8F',       /* Azul medio transición / acentos */
+          purple: '#2E1A47',    /* Morado oscuro */
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

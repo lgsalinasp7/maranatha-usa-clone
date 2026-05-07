@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.maranathamc.com"),
@@ -61,7 +67,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://w.behold.so" />
       </head>
-      <body className="antialiased" suppressHydrationWarning>
+      <body className={`antialiased ${playfairDisplay.variable}`} suppressHydrationWarning>
         <ClientBody>{children}</ClientBody>
       </body>
     </html>
