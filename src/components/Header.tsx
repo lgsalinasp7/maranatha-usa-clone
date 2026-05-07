@@ -208,7 +208,7 @@ export default function Header() {
             <Link href="/nosotros#pastores" onClick={() => setMenuOpen(false)} className="text-xl sm:text-2xl hover:opacity-80 transition-opacity">
               Cobertura
             </Link>
-            <Link href="https://maranatha.com.co/blog/" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-xl sm:text-2xl hover:opacity-80 transition-opacity">
+            <Link href="/reflexiones" onClick={() => setMenuOpen(false)} className="text-xl sm:text-2xl hover:opacity-80 transition-opacity">
               Reflexiones
             </Link>
             <Link href="#next-steps" onClick={() => setMenuOpen(false)} className="text-xl sm:text-2xl hover:opacity-80 transition-opacity">

@@ -6,7 +6,7 @@ export default function JsonLd() {
     description:
       "Iglesia cristiana de fe, amor y poder en Montería, Córdoba. Servicios los domingos a las 10:00 a.m.",
     url: "https://www.maranathamc.com",
-    telephone: "+573046532363",
+    telephone: "+573042953336",
     email: "contacto@maranathamc.com",
     address: {
       "@type": "PostalAddress",
