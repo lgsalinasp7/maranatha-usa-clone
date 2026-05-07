@@ -12,6 +12,11 @@
   }
 
   :root {
+    /* Paleta Iglesia Maranatha */
+    --brand-dark: #111827;
+    --brand-light: #D1D5DB;
+    --brand-mid: #2A4B8F;
+    --brand-purple: #2E1A47;
     --background: 0 0% 100%;
     --foreground: 0 0% 2%;
     --card: 0 0% 100%;

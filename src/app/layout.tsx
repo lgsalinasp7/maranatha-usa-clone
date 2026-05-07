@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.maranathamc.com"),
@@ -44,8 +50,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/logoMaranatha.png",
-    apple: "/images/logoMaranatha.png",
+    icon: "/images/logo2.png",
+    apple: "/images/logo2.png",
   },
 };
 
@@ -60,8 +66,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://w.behold.so" />
+        <link rel="icon" href="/images/logo2.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo2.png" />
       </head>
-      <body className="antialiased" suppressHydrationWarning>
+      <body className={`antialiased ${playfairDisplay.variable}`} suppressHydrationWarning>
         <ClientBody>{children}</ClientBody>
       </body>
     </html>
