@@ -212,7 +212,7 @@ export default function Header() {
               Reflexiones
             </Link>
             <Link href="#next-steps" onClick={() => setMenuOpen(false)} className="text-xl sm:text-2xl hover:opacity-80 transition-opacity">
-              PoimenSoft
+              GadeSoft
             </Link>
           </nav>
         </div>
