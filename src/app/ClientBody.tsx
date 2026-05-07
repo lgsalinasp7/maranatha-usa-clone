@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export function ClientBody({
   children,
@@ -11,5 +12,10 @@ export function ClientBody({
     document.body.className = "antialiased";
   }, []);
 
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <WhatsAppButton />
+    </>
+  );
 }

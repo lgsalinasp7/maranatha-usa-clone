@@ -47,6 +47,11 @@ const nextConfig = {
         hostname: "fbcdn.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "maranatha.com.co",
+        pathname: "/**",
+      },
     ],
   },
 };
