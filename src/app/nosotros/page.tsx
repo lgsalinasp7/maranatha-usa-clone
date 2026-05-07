@@ -39,7 +39,7 @@ export default function NosotrosPage() {
             <p className="font-playfair text-brand-light/90 text-center text-sm sm:text-base uppercase tracking-[0.2em] mb-4">
               Bienvenido a Maranatha MC
             </p>
-            <p className="font-playfair text-[rgba(2,51,126,0.95)] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-8 md:mb-10 tracking-tight drop-shadow-sm">
+            <p className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-10 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-white to-cyan-200 drop-shadow-[0_0_20px_rgba(34,211,238,0.3)]">
               Somos una iglesia
             </p>
             <div className="max-w-4xl mx-auto text-center">
